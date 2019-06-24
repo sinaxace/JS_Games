@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concentration</title>
+  <link rel="stylesheet" href="../css_files/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> <!-- Awesome Font Library for text styling -->
+</head>
+
+<body>
+  <div class=top>
+    <header id=heading>
+      <h1 class=key>JS Games <br><span class="fas fa-dice
+"> Concentration</span></h1>
+    </header>
+    <nav class=side>
+      <a class=pretty href="home.html">Home</a>
+      <a class=pretty href="casino_craps.html">Casino Craps</a>
+      <a class=pretty href="ticTacToe.html">Tic Tac Toe</a>
+      <a class=pretty href="bingo.html">Bingo</a>
+      <a class=pretty href="concentration.html">Concentration</a>
+    </nav>
+  </div>
+  <main class=entireGame id=concentration>
+    <button onClick="buttonTimer()" type="button" class=pretty id=newCard>Timer</button>
+    <button onClick="resetGame()" type="button" class=pretty id=caller>New Game</button>
+    <table id=myBoard bgcolor=white align=center cellpadding=5 cellspacing=5>
+      <tr>
+        <td onClick="checkImage(0,0)" class=concentrateCell></td>
+        <td onClick="checkImage(0,1)" class=concentrateCell></td>
+        <td onClick="checkImage(0,2)" class=concentrateCell></td>
+        <td onClick="checkImage(0,3)" class=concentrateCell></td>
+        <td onClick="checkImage(0,4)" class=concentrateCell></td>
+        <td onClick="checkImage(0,5)" class=concentrateCell></td>
+      </tr>
+      <tr>
+        <td onClick="checkImage(1,0)" class=concentrateCell></td>
+        <td onClick="checkImage(1,1)" class=concentrateCell></td>
+        <td onClick="checkImage(1,2)" class=concentrateCell></td>
+        <td onClick="checkImage(1,3)" class=concentrateCell></td>
+        <td onClick="checkImage(1,4)" class=concentrateCell></td>
+        <td onClick="checkImage(1,5)" class=concentrateCell></td>
+      </tr>
+      <tr>
+        <td onClick="checkImage(2,0)" class=concentrateCell></td>
+        <td onClick="checkImage(2,1)" class=concentrateCell></td>
+        <td onClick="checkImage(2,2)" class=concentrateCell></td>
+        <td onClick="checkImage(2,3)" class=concentrateCell></td>
+        <td onClick="checkImage(2,4)" class=concentrateCell></td>
+        <td onClick="checkImage(2,5)" class=concentrateCell></td>
+      </tr>
+      <tr>
+        <td onClick="checkImage(3,0)" class=concentrateCell></td>
+        <td onClick="checkImage(3,1)" class=concentrateCell></td>
+        <td onClick="checkImage(3,2)" class=concentrateCell></td>
+        <td onClick="checkImage(3,3)" class=concentrateCell></td>
+        <td onClick="checkImage(3,4)" class=concentrateCell></td>
+        <td onClick="checkImage(3,5)" class=concentrateCell></td>
+      </tr>
+      <tr>
+        <td onClick="checkImage(4,0)" class=concentrateCell></td>
+        <td onClick="checkImage(4,1)" class=concentrateCell></td>
+        <td onClick="checkImage(4,2)" class=concentrateCell></td>
+        <td onClick="checkImage(4,3)" class=concentrateCell></td>
+        <td onClick="checkImage(4,4)" class=concentrateCell></td>
+        <td onClick="checkImage(4,5)" class=concentrateCell></td>
+      </tr>
+      <tr>
+        <td onClick="checkImage(5,0)" class=concentrateCell></td>
+        <td onClick="checkImage(5,1)" class=concentrateCell></td>
+        <td onClick="checkImage(5,2)" class=concentrateCell></td>
+        <td onClick="checkImage(5,3)" class=concentrateCell></td>
+        <td onClick="checkImage(5,4)" class=concentrateCell></td>
+        <td onClick="checkImage(5,5)" class=concentrateCell></td>
+      </tr>
+    </table>
+        <section id="timer">00:00:00</section>
+  </main>
+  <footer>
+    <h4 class=key>malekikh, SYST10199 Web Programming @ Sheridan College</h4>
+  </footer>
+  <script src=../javascript_files/concentration.js></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!-- Phase 2  - Sina Maleki-Kheymehsari-->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Craps</title>
+  <link rel="stylesheet" href="../css_files/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> <!-- Awesome Font Library or text styling -->
+</head>
+
+<body>
+  <div class=top>
+    <header id=heading>
+      <h1 class=key>JS Games <br><span class="fas fa-dice"> Casino Craps</span></h1>
+    </header>
+    <nav class=side>
+      <a class=pretty href="home.html">Home</a>
+      <a class=pretty href="casino_craps.html">Casino Craps</a>
+      <a class=pretty href="ticTacToe.html">Tic Tac Toe</a>
+      <a class=pretty href="bingo.html">Bingo</a>
+      <a class=pretty href="concentration.html">Concentration</a>
+    </nav>
+  </div>
+
+  <!-- Game starts -->
+  <main>
+    <table cellspacing=10 class="entireGame">
+      <tr>
+        <td class=outline id=diceCell>
+          <div class="dice" id=diceSide1>0</div>
+          <div class="dice" id=diceSide2>0</div>
+        </td>
+        <td id=rolledCell class=outline>
+          <p class=pSize>You rolled...</p>
+          <div id=score>00</div>
+        </td>
+        <td class=outline id=mobileFormat>
+          <button type="button" onClick="rollDice()" class=pretty id=roll>Roll the Dice</button>
+          <button type="button" onClick="resetDice()" class=pretty id=clear>Clear stats</button>
+          <h2>
+            <strong>Statistics</strong>
+          </h2>
+          <p class=pSize>Wins: <span id=win>0</span> <br><br>Losses: <span id=loss>0</span></p>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <h4 class=key>malekikh, SYST10199 Web Programming @ Sheridan College</h4>
+  </footer>
+  <script src=../javascript_files/casino_craps.js></script>
+</body>
+
+</html>

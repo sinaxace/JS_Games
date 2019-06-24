@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingo</title>
+  <link rel="stylesheet" href="../css_files/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> <!-- Awesome Font Library or text styling -->
+</head>
+
+<body>
+  <div class=top>
+    <header id=heading>
+      <h1 class=key>JS Games <br><span class="fas fa-dice"> Bingo</span></h1>
+    </header>
+    <nav class=side>
+      <a class=pretty href="home.html">Home</a>
+      <a class=pretty href="casino_craps.html">Casino Craps</a>
+      <a class=pretty href="ticTacToe.html">Tic Tac Toe</a>
+      <a class=pretty href="bingo.html">Bingo</a>
+      <a class=pretty href="concentration.html">Concentration</a>
+    </nav>
+  </div>
+  <main class=entireGame id=bingo>
+    <button type="button" onClick="newBingoCard()" class=pretty id=newCard>Generate New Card</button>
+    <button type="button" onClick="bingoCall()" class=pretty id=caller>Caller</button>
+    <table align=center cellpadding=10 cellspacing=3>
+      <tr bgcolor=lightcoral>
+          <td class=bingoCell>B</td><td class=bingoCell>I</td><td class=bingoCell>N</td><td class=bingoCell>G</td><td class=bingoCell>O</td>
+      </tr>
+      <tr>
+        <td class=bingoCell>B</td><td class=bingoCell>I</td><td class=bingoCell>N</td><td class=bingoCell>G</td><td class=bingoCell>O</td>
+
+      </tr>
+      <tr>
+        <td class=bingoCell>B</td><td class=bingoCell>I</td><td class=bingoCell>N</td><td class=bingoCell>G</td><td class=bingoCell>O</td>
+
+      </tr>
+      <tr>
+        <td class=bingoCell>B</td><td class=bingoCell>I</td><td class=bingoCell id=free>FREE</td><td class=bingoCell>G</td><td class=bingoCell>O</td>
+
+      </tr>
+      <tr>
+        <td class=bingoCell>B</td><td class=bingoCell>I</td><td class=bingoCell>N</td><td class=bingoCell>G</td><td class=bingoCell>O</td>
+
+      </tr>
+      <tr>
+        <td class=bingoCell>B</td><td class=bingoCell>I</td><td class=bingoCell>N</td><td class=bingoCell>G</td><td class=bingoCell>O</td>
+
+      </tr>
+    </table>
+    <div id="callerMessage">
+        <h3 id="callerHeading"></h3>
+    </div>
+  </main>
+  <footer>
+    <h4 class=key>malekikh, SYST10199 Web Programming @ Sheridan College</h4>
+  </footer>
+  <script src=../javascript_files/bingo.js></script>
+</body>
+
+</html>

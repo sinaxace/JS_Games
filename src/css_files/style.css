@@ -1,0 +1,455 @@
+/* Main Page Styling */
+body{
+    overflow: hidden;
+}
+
+/*Nav bar at top of site CSS code*/
+h1 {
+    font-size: 60px;
+}
+
+.key {
+    animation-name: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: 10000;
+}
+
+@keyframes alternate {
+    0% {
+        color: #000
+    }
+
+    50% {
+        color: #F00
+    }
+
+    100% {
+        color: #000
+    }
+}
+.top {
+    background-color: #999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    height:auto;
+    text-align: center;
+    padding-bottom:40px;
+    margin:auto;
+}
+.pretty {
+    font-size: 23px;
+    color: white;
+    padding: 10px 100px;
+    transition: 0.5s;
+    text-decoration: none;
+    background-color: #555;
+}
+
+.pretty:hover {
+    color: #F00;
+    background-color: #EEE;
+    cursor: pointer;
+}
+/*End of nav bar CSS code*/
+footer {
+    background-color: #999;
+    margin:auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height:auto;
+    text-align: center;
+    font-size: 15px;
+}
+/* Home Page Welcome Message Styling */
+#intro{
+    position: relative;
+    top: 320px;
+    left: 450px;
+    text-align:center;
+    border: 10px dotted red;
+    width: 600px;
+    padding:15px;
+}
+#title{
+    font-size: 30px;
+}
+#welcomeMessage{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Casino Craps Styling*/
+#roll, #clear{
+    padding:10px;
+    width:150px;
+    height: 50px;
+    font-size: 18px;
+    margin: 10px 5px;
+    margin-left: 1px;
+}
+.outline {
+    border-style:solid;
+    border-color: #999;
+    padding: 60px;
+    padding-top: 35px;
+    padding-bottom: 65px;
+    margin: 0px 50px;
+    width: 145px;
+    height:220px;
+    text-align: center;
+}
+.pSize {
+    font-size: 18px;
+}
+#score{
+    font-size: 150px;
+}
+.entireGame {
+    position:absolute;
+    top: 300px;
+    left: 350px;
+    text-align:center;
+}
+.dice {
+    color:white;
+    width: 20px;
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 50px;
+    padding-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 5px 10px 10px #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tic Tac Toe Styling*/
+.tic {
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 35px;
+}
+.toe {
+    border: 1px solid blue;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+/* these four turn off outer borders */
+.tac:first-child .toe {
+    border-top: none;
+}
+
+.tac:last-child .toe {
+    border-bottom: none;
+}
+
+.toe:first-child {
+    border-left: none;
+}
+.toe:last-child {
+    border-right: none;
+}
+#reset {
+    font-size: 20px;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+#ticGame{
+    text-align:center;
+    position: relative;
+    top: 270px;
+}
+#message {
+    background-color: #f9ecf2;
+    border: 1px solid #660066;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black, -1px -1px 5px white;
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+    height: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    position: fixed;
+    top: 280px;
+    left: 150px;
+    width: 80%;
+    z-index: 200;
+}
+#overlay {
+    background-color: rgba(20, 20, 20, 0.4);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+
+
+
+/* Bingo Styling*/
+#free {
+    background-color: black;
+    color:white;
+    font-size: 20px;
+}
+.bingoCell{
+    border: 1px solid black;
+    font-size: 20px;
+    width:40px;
+    padding:10px;
+}
+#newCard, #caller{
+    padding:15px 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#bingo, #concentration{
+    position:relative;
+    top: 290px;
+    left:0px;
+}
+#callerMessage, #timer{
+    background-color: #f9ecf2;
+    border: 1px solid #660066;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black, -1px -1px 5px white;
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    position: fixed;
+    top: 400px;
+    right: 350px;
+    width: auto;
+    padding:10px;
+    z-index: 200;
+}
+
+
+
+
+
+
+/* Concentration Styling */
+.concentrateCell{
+    border: 1px solid black;
+    font-size: 30px;
+    width:30px;
+    height:35px;
+    padding:3px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Everything below is for Mobile Devices Styling */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    h1{
+        font-size:20px;
+        text-align: center;
+    }
+
+    footer{
+        font-size: 10px;
+        overflow-x: hidden;
+    }
+    .top{
+        position:fixed;
+        top:0;
+        height: 30px;
+    }
+    #intro{
+        position: fixed;
+        top: 75px;
+        left: 140px;
+        border: 10px dotted red;
+        width: 50%;
+        padding:10px;
+    }
+    #title{
+        font-size: 25px;
+    }
+    #welcomeMessage{
+        font-size: 17px;
+    }
+    .side {
+        height: 800px; /* Full-height: remove this if you want "auto" height */
+        width: auto; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        top:70px; /* Stay at the top */
+        left: 0;
+        background-color: #999;
+        padding-top: 20px;
+        color:white;
+    }
+    /* The navigation menu links */
+    .side a {
+        padding: 6px 8px 6px 16px;
+        font-size: 20px;
+        display: block;
+    }
+    .pretty{
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
+
+    #newCard, #caller{
+        padding:5px 7px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    #bingo, #concentration{
+        position:relative;
+        top: 90px;
+        left:67px;
+        padding:5px;
+    }
+    /* Concentration Styling */
+    .concentrateCell, .bingoCell{
+        padding:1px;
+        width:26px;
+    }
+    #callerMessage, #timer{
+        font-size: 20px;
+        right: 70px;
+        padding:5px;
+    }
+    #timer{
+        top:480px;
+    }
+
+
+    .tic {
+        margin: 0 auto;
+        font-size: 35px;
+    }
+    .toe {
+        border: 1px solid blue;
+        width: 20px;
+        height: 20px;
+        font-size: 27px;
+        cursor: pointer;
+    }
+    #ticGame{
+        position: fixed;
+        right: 20px;
+        top: 100px;
+    }
+
+
+
+    /*Casino Craps Styling*/
+    #roll, #clear{
+        font-size: 14px;
+        padding:5px;
+        margin:0;
+        width:100px;
+        height:auto;
+    }
+    .outline {
+        width:auto;
+        height: auto;
+        margin: 5px 16px;
+        padding:10px;
+    }
+    .pSize {
+        font-size: 10px;
+    }
+    #score{
+        font-size: 60px;
+        float:none;
+    }
+
+    .entireGame {
+        position:fixed;
+        top: 80px;
+        left:135px;
+    }
+    .dice {
+        width:auto;
+        font-size: 30px;
+        padding:28px;
+        padding-top: 20px
+    }
+    #mobileFormat{
+        width:150px;
+        height:170px;
+        margin-left: 30px;
+        position: absolute;
+        top:219px;
+        left: 3px;
+    }
+    #rolledCell{
+        margin-left: 0;
+        height: 183px;
+    }
+    #diceCell{
+        margin-right: 5px;
+    }
+    #message {
+        font-size: 20px;
+        font-weight: bold;
+        height: 30%;
+        margin: 0 auto;
+        padding: 20px;
+        position: fixed;
+        top: 200px;
+        left: 70px;
+        width: 200px;
+    }
+
+}
